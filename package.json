@@ -1,0 +1,15 @@
+{
+  "name": "3-column-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "3 colorful cards !",
+  "main": "index.js",
+  "scripts": {
+    "compile:css": "node-sass main.scss app.css",
+    "watch:css": "node-sass main.scss app.css -w"
+  },
+  "author": "musread",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
