@@ -5,16 +5,88 @@
   padding: 0;
   box-sizing: inherit; }
 
+:root {
+  --light-gray: hsl(0, 0%, 95%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%); }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Lexend Deca", sans-serif; }
 
 body {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: var(--light-gray);
+  color: var(--light-gray);
+  line-height: 2.5rem; }
+  @media only screen and (max-width: 23.4375em) {
+    body {
+      height: 100%; } }
 
 .attribution {
-  text-align: center; }
+  text-align: center;
+  color: var(--very-dark-cyan); }
 
 .attribution a {
+  text-decoration: none;
   color: #3e52a3; }
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 23.4375em) {
+    .container {
+      align-items: flex-start;
+      margin-top: 5rem; } }
+
+.component-wrapper {
+  width: 90rem;
+  display: flex;
+  border-radius: 0.8rem;
+  overflow: hidden; }
+  @media only screen and (max-width: 23.4375em) {
+    .component-wrapper {
+      width: 90%;
+      flex-direction: column;
+      align-items: center; } }
+
+.preview-card {
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem; }
+  .preview-card--sedans {
+    background-color: var(--bright-orange); }
+  .preview-card--suvs {
+    background-color: var(--dark-cyan); }
+  .preview-card--luxury {
+    background-color: var(--very-dark-cyan); }
+  .preview-card__header {
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 3.5rem; }
+  .preview-card__text {
+    color: var(--transparent-white);
+    flex: 1 0 18rem; }
+    @media only screen and (max-width: 23.4375em) {
+      .preview-card__text {
+        flex: 1 0 10rem; } }
+  .preview-card__button:link, .preview-card__button:active {
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: var(--light-gray);
+    border-radius: 20rem; }
+  .preview-card__button--sedans {
+    color: var(--bright-orange); }
+  .preview-card__button--suvs {
+    color: var(--dark-cyan); }
+  .preview-card__button--luxury {
+    color: var(--very-dark-cyan); }

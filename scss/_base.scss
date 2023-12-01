@@ -6,6 +6,16 @@
   box-sizing: inherit;
 }
 
+:root {
+  --light-gray: hsl(0, 0%, 95%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  // color for preview-card backgrounds
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -14,4 +24,13 @@ html {
 
 body {
   font-size: 1.5rem;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: var(--light-gray);
+  color: var(--light-gray);
+  line-height: 2.5rem;
+
+  @include respond {
+    height: 100%;
+  }
 }

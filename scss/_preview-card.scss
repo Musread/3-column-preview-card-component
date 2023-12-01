@@ -1,0 +1,56 @@
+.preview-card {
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+
+  &--sedans {
+    background-color: var(--bright-orange);
+  }
+
+  &--suvs {
+    background-color: var(--dark-cyan);
+  }
+
+  &--luxury {
+    background-color: var(--very-dark-cyan);
+  }
+
+  &__header {
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 3.5rem;
+  }
+
+  &__text {
+    color: var(--transparent-white);
+    flex: 1 0 18rem;
+
+    @include respond {
+      flex: 1 0 10rem;
+    }
+  }
+
+  &__button:link,
+  &__button:active {
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: var(--light-gray);
+    border-radius: 20rem;
+  }
+
+  &__button {
+    &--sedans {
+      color: var(--bright-orange);
+    }
+
+    &--suvs {
+      color: var(--dark-cyan);
+    }
+
+    &--luxury {
+      color: var(--very-dark-cyan);
+    }
+  }
+}
