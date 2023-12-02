@@ -2,7 +2,7 @@
 
 **Hi everyone 👋 !**
 
-I come back again with another solution for a [FrontendMentor](https://www.frontendmentor.io) challange.
+I come back again with another solution for a [FrontendMentor](https://www.frontendmentor.io) challenge.
 
 ## Table of contents
 
